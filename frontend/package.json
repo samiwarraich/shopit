@@ -51,5 +51,5 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "https://shopit-pearl.vercel.app"
+  "proxy": "http://127.0.0.1:4000"
 }
