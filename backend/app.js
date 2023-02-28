@@ -24,9 +24,11 @@ app.use("/api/v1", auth);
 app.use("/api/v1", payment);
 app.use("/api/v1", order);
 
-app.get("*", (req, res) => {
-  res.sendFile(path.resolve(__dirname, "../frontend/build/index.html"));
-});
+if (process.env.NODE_ENV === "production") {
+  app.get("*", (req, res) => {
+    res.sendFile(path.resolve(__dirname, "../frontend/build/index.html"));
+  });
+}
 
 app.use(errorMiddleware);
 
