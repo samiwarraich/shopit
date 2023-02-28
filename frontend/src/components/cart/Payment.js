@@ -4,6 +4,7 @@ import CheckoutSteps from "./CheckoutSteps";
 import { useAlert } from "react-alert";
 import { useDispatch, useSelector } from "react-redux";
 import { createOrder, clearErrors } from "../../actions/orderActions";
+import { removeItemFromCart } from "../../actions/cartActions";
 import MetaData from "../layout/MetaData";
 import {
   useStripe,
@@ -96,7 +97,9 @@ const Payment = ({ history }) => {
             status: result.paymentIntent.status,
           };
           dispatch(createOrder(order));
-
+          cartItems.forEach((item) => {
+            dispatch(removeItemFromCart(item.product));
+          });
           history.push("/success");
         } else {
           alert.error("There is some issue while payment processing");

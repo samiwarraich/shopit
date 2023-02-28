@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
-import { useAlert } from "react-alert";
 import MetaData from "../layout/MetaData";
 import { addItemToCart, removeItemFromCart } from "../../actions/cartActions";
 
@@ -46,8 +45,8 @@ const Cart = ({ history }) => {
 
           <div className="row d-flex justify-content-between">
             <div className="col-12 col-lg-8">
-              {cartItems.map((item) => (
-                <>
+              {cartItems.map((item, i) => (
+                <div key={i}>
                   <hr />
                   <div className="cart-item" key={item.product}>
                     <div className="row">
@@ -110,7 +109,7 @@ const Cart = ({ history }) => {
                     </div>
                   </div>
                   {/* <hr /> */}
-                </>
+                </div>
               ))}
               <hr />
             </div>

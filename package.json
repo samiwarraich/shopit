@@ -6,9 +6,8 @@
   "scripts": {
     "start": "node backend/server.js",
     "dev": "NODE_ENV=DEVELOPMENT nodemon backend/server.js",
-    "prod": "NODE_ENV=PRODUCTION nodemon backend/server.js",
-    "seeder": "node backend/utils/seeder.js",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false && npm install --prefix frontend && npm run build --prefix frontend"
+    "prod": "NODE_ENV=PRODUCTION node backend/server.js",
+    "seeder": "node backend/utils/seeder.js"
   },
   "author": "Sami Warraich",
   "license": "ISC",
@@ -24,8 +23,5 @@
     "nodemailer": "^6.6.1",
     "stripe": "^8.156.0",
     "validator": "^13.6.0"
-  },
-  "engines": {
-    "node": "16.0.0"
   }
 }
