@@ -854,7 +854,7 @@ q@^1.5.1:
   resolved "https://registry.yarnpkg.com/q/-/q-1.5.1.tgz#7e32f75b41381291d04611f1bf14109ac00651d7"
   integrity sha512-kV/CThkXo6xyFEZUugw/+pIOywXcDbFYgSct5cT3gqlbkBE1SJdwy6UQoZvodiWF/ckQLZyDE/Bu1M6gVu5lVw==
 
-qs@6.11.0, qs@^6.10.3:
+qs@6.11.0, qs@^6.11.0:
   version "6.11.0"
   resolved "https://registry.yarnpkg.com/qs/-/qs-6.11.0.tgz#fd0d963446f7a65e1367e01abd85429453f0c37a"
   integrity sha512-MvjoMCJwEarSbUYk5O+nmoSzSutSsTwF85zcHPQ9OrlFoZOYIjaqBAJIqIXjptyD5vThxGq52Xu/MaJzRkIk4Q==
@@ -1055,13 +1055,13 @@ string_decoder@~1.1.1:
   dependencies:
     safe-buffer "~5.1.0"
 
-stripe@^8.156.0:
-  version "8.222.0"
-  resolved "https://registry.yarnpkg.com/stripe/-/stripe-8.222.0.tgz#5f159156e411b668a88b8f957df5ac3c63b119de"
-  integrity sha512-hrA79fjmN2Eb6K3kxkDzU4ODeVGGjXQsuVaAPSUro6I9MM3X+BvIsVqdphm3BXWfimAGFvUqWtPtHy25mICY1w==
+stripe@^11.12.0:
+  version "11.12.0"
+  resolved "https://registry.yarnpkg.com/stripe/-/stripe-11.12.0.tgz#2d7d4c37a6447a972128b1266e027693241704e3"
+  integrity sha512-7yzFyVV/eYpYalfjnw1f9sh/N3r5QVdx5MFtmpOg2QikKVAW4AptXC8P0wj1KNCd/LIo23nTDo0+m9788jHswg==
   dependencies:
     "@types/node" ">=8.1.0"
-    qs "^6.10.3"
+    qs "^6.11.0"
 
 toidentifier@1.0.1:
   version "1.0.1"
