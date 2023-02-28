@@ -23,5 +23,8 @@
     "nodemailer": "^6.6.1",
     "stripe": "^8.156.0",
     "validator": "^13.6.0"
+  },
+  "engines": {
+    "node": "16.13.0"
   }
 }
