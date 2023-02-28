@@ -4,10 +4,9 @@
   "description": "ecommerce site",
   "main": "server.js",
   "scripts": {
-    "start": "node backend/server.js",
+    "start": "yarn && cd frontend && yarn && yarn build && node backend/server.js",
     "build": "yarn && cd frontend && yarn && yarn build",
     "dev": "NODE_ENV=development nodemon backend/server.js",
-    "prod": "NODE_ENV=production node backend/server.js",
     "seeder": "node backend/utils/seeder.js"
   },
   "author": "Sami Warraich",
