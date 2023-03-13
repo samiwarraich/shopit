@@ -13,8 +13,6 @@ updates:
     labels:
       - "npm"
       - "dependencies"
-version: 2
-updates:
   - package-ecosystem: "npm"
     directory: "/frontend"
     schedule:
