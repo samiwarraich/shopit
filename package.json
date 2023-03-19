@@ -7,7 +7,7 @@
     "start": "yarn && cd frontend && yarn && yarn build && cd .. && node backend/server.js",
     "build": "yarn && cd frontend && yarn && yarn build",
     "dev": "NODE_ENV=development nodemon backend/server.js",
-    "prod": "NODE_ENV=production nodemon backend/server.js",
+    "prod": "node backend/server.js",
     "seeder": "node backend/utils/seeder.js"
   },
   "author": "Sami Warraich",
@@ -24,8 +24,5 @@
     "nodemailer": "^6.6.1",
     "stripe": "^11.15.0",
     "validator": "^13.6.0"
-  },
-  "engines": {
-    "node": "16.13.0"
   }
 }
