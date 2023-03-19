@@ -41,29 +41,32 @@ exports.newProduct = catchAsyncErrors(async (req, res, next) => {
 });
 
 exports.getProducts = catchAsyncErrors(async (req, res, next) => {
-  const resPerPage = 8;
+  try {
+    const resPerPage = 8;
 
-  const productsCount = await Product.countDocuments();
+    const productsCount = await Product.countDocuments();
 
-  const apiFeatures = new APIFeatures(Product.find(), req.query)
-    .search()
-    .filter();
-  //.pagination(resPerPage);
+    const apiFeatures = new APIFeatures(Product.find(), req.query)
+      .search()
+      .filter();
+    // .pagination(resPerPage);
 
-  let products = await apiFeatures.query;
-  let filteredProductsCount = products.length;
+    let products = await apiFeatures.query.clone();
+    let filteredProductsCount = products.length;
 
-  apiFeatures.pagination(resPerPage);
+    apiFeatures.pagination(resPerPage);
+    products = await apiFeatures.query;
 
-  products = await apiFeatures.query;
-
-  res.status(200).json({
-    success: true,
-    productsCount,
-    resPerPage,
-    filteredProductsCount,
-    products,
-  });
+    res.status(200).json({
+      success: true,
+      productsCount,
+      resPerPage,
+      filteredProductsCount,
+      products,
+    });
+  } catch (error) {
+    console.log({ error });
+  }
 });
 
 exports.getAdminProducts = catchAsyncErrors(async (req, res, next) => {
