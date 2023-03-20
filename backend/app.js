@@ -2,15 +2,22 @@ const express = require("express");
 const app = express();
 const cookieParser = require("cookie-parser");
 const fileUpload = require("express-fileupload");
+const RateLimit = require("express-rate-limit");
 require("dotenv").config();
 const path = require("path");
 
 const errorMiddleware = require("./middlewares/errors");
 
+const limiter = RateLimit({
+  windowMs: 1 * 60 * 1000,
+  max: 10,
+});
+
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 app.use(fileUpload());
+app.use(limiter);
 
 const products = require("./routes/product");
 const auth = require("./routes/auth");
