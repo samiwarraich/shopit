@@ -929,10 +929,10 @@ string_decoder@~0.10.x:
   resolved "https://registry.yarnpkg.com/string_decoder/-/string_decoder-0.10.31.tgz#62e203bc41766c6c28c9fc84301dab1c5310fa94"
   integrity sha512-ev2QzSzWPYmy9GuqfIVildA4OdcGLeFZQrq5ys6RtiuF+RQQiZWr8TZNyAcuVXyQRYfEO+MsoB/1BuQVhOJuoQ==
 
-stripe@^11.15.0:
-  version "11.15.0"
-  resolved "https://registry.yarnpkg.com/stripe/-/stripe-11.15.0.tgz#c4a9a876945bd1bb375fc59f51ccc2b999f0d165"
-  integrity sha512-HkXz/o4hVvBLSSgTLo3iZQW19PV+DiOdwsj26jnrRcOgpZ+dpGgzpudL/yTWEho7lWcz3cRNov3d4REZ1Qtfbg==
+stripe@^11.16.0:
+  version "11.16.0"
+  resolved "https://registry.yarnpkg.com/stripe/-/stripe-11.16.0.tgz#07bad41fc568e2a71a820fc35a15d4d7c6347e4d"
+  integrity sha512-Ej1ZtbrMw+Z7L8Kxj80sDNF0E/lPypY2nwymU/wGcOjn7CppTa2HXxPTsQRQ8U0MSVRcwRWyGMrizQWuaUqVGw==
   dependencies:
     "@types/node" ">=8.1.0"
     qs "^6.11.0"
