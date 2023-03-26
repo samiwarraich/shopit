@@ -10,7 +10,7 @@ const errorMiddleware = require("./middlewares/errors");
 
 const limiter = RateLimit({
   windowMs: 1 * 60 * 1000,
-  max: 10,
+  max: 100,
 });
 
 app.use(express.json());
