@@ -23,7 +23,7 @@
     "jsonwebtoken": "^9.0.0",
     "mongoose": "^7.0.3",
     "nodemailer": "^6.6.1",
-    "stripe": "^11.16.0",
+    "stripe": "^11.17.0",
     "validator": "^13.6.0"
   },
   "engines": {
