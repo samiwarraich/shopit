@@ -22,7 +22,7 @@
     "express-rate-limit": "^6.7.1",
     "jsonwebtoken": "^9.0.1",
     "mongoose": "^7.3.4",
-    "nodemailer": "^6.9.3",
+    "nodemailer": "^6.9.4",
     "stripe": "^12.13.0",
     "validator": "^13.6.0"
   },
