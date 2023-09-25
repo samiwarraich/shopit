@@ -89,8 +89,8 @@ const OrderDetails = ({ match }) => {
               <div className="cart-item my-1">
                 {orderItems &&
                   orderItems.map((item) => (
-                    <>
-                      <div key={item.product} className="row my-5">
+                    <div key={item.product}>
+                      <div className="row my-5">
                         <div className="col-4 col-lg-2">
                           <img
                             src={item.image}
@@ -115,7 +115,7 @@ const OrderDetails = ({ match }) => {
                         </div>
                       </div>
                       <hr />
-                    </>
+                    </div>
                   ))}
               </div>
             </div>
