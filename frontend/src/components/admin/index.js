@@ -1,0 +1,10 @@
+export { default as Dashboard } from "./Dashboard";
+export { default as NewProduct } from "./NewProduct";
+export { default as OrdersList } from "./OrdersList";
+export { default as ProcessOrder } from "./ProcessOrder";
+export { default as ProductReviews } from "./ProductReviews";
+export { default as ProductsList } from "./ProductsList";
+export { default as Sidebar } from "./Sidebar";
+export { default as UpdateProduct } from "./UpdateProduct";
+export { default as UpdateUser } from "./UpdateUser";
+export { default as UsersList } from "./UsersList";

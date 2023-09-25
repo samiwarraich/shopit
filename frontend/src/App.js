@@ -1,46 +1,42 @@
-import React, { useEffect, useState } from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom";
-import axios from "axios";
 import "./App.css";
-import Header from "./components/layout/Header";
-import Footer from "./components/layout/Footer";
-
-import Home from "./components/Home";
-import ProductDetails from "./components/product/ProductDetails";
-
-import Cart from "./components/cart/Cart";
-import Shipping from "./components/cart/Shipping";
-import ConfirmOrder from "./components/cart/ConfirmOrder";
-import Payment from "./components/cart/Payment";
-import OrderSuccess from "./components/cart/OrderSuccess";
-
-import ListOrders from "./components/order/ListOrders";
-import OrderDetails from "./components/order/OrderDetails";
-
-import Login from "./components/user/Login";
-import Register from "./components/user/Register";
-import Profile from "./components/user/Profile";
-import UpdateProfile from "./components/user/UpdateProfile";
-import UpdatePassword from "./components/user/UpdatePassword";
-import ForgotPassword from "./components/user/ForgotPassword";
-import NewPassword from "./components/user/NewPassword";
-import UpdateUser from "./components/admin/UpdateUser";
-
-import Dashboard from "./components/admin/Dashboard";
-import ProductsList from "./components/admin/ProductsList";
-import NewProduct from "./components/admin/NewProduct";
-import UpdateProduct from "./components/admin/UpdateProduct";
-import OrdersList from "./components/admin/OrdersList.js";
-import ProcessOrder from "./components/admin/ProcessOrder";
-import UsersList from "./components/admin/UsersList";
-import ProductReviews from "./components/admin/ProductReviews";
-
-import ProtectedRoute from "./components/route/ProtectedRoute";
-import { loadUser } from "./redux/actions/userActions";
-import store from "./redux/store";
-import { Elements } from "@stripe/react-stripe-js";
-import { loadStripe } from "@stripe/stripe-js";
+import React, { useEffect, useState } from "react";
+import axios from "axios";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import { useSelector } from "react-redux";
+import { Elements } from "@stripe/react-stripe-js";
+import { loadUser } from "./redux/actions/userActions";
+import { loadStripe } from "@stripe/stripe-js";
+import store from "./redux/store";
+import {
+  Header,
+  Footer,
+  Home,
+  ProductDetails,
+  Cart,
+  Shipping,
+  ConfirmOrder,
+  Payment,
+  OrderSuccess,
+  ListOrders,
+  OrderDetails,
+  Login,
+  Register,
+  Profile,
+  UpdateProfile,
+  UpdatePassword,
+  ForgotPassword,
+  NewPassword,
+  UpdateUser,
+  Dashboard,
+  ProductsList,
+  NewProduct,
+  UpdateProduct,
+  OrdersList,
+  ProcessOrder,
+  UsersList,
+  ProductReviews,
+  ProtectedRoute,
+} from "./components";
 
 function App() {
   const [stripeApiKey, setStripeApiKey] = useState("");

@@ -1,11 +1,7 @@
 import React, { useEffect } from "react";
 import axios from "axios";
-import CheckoutSteps from "./CheckoutSteps";
 import { useAlert } from "react-alert";
 import { useDispatch, useSelector } from "react-redux";
-import { createOrder, clearErrors } from "../../redux/actions/orderActions";
-import { removeItemFromCart } from "../../redux/actions/cartActions";
-import MetaData from "../layout/MetaData";
 import {
   useStripe,
   useElements,
@@ -13,6 +9,10 @@ import {
   CardExpiryElement,
   CardCvcElement,
 } from "@stripe/react-stripe-js";
+import { createOrder, clearErrors } from "../../redux/actions/orderActions";
+import { removeItemFromCart } from "../../redux/actions/cartActions";
+import CheckoutSteps from "./CheckoutSteps";
+import { MetaData } from "../layout";
 
 const options = {
   style: {

@@ -1,8 +1,7 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
-import MetaData from "../layout/MetaData";
-import Loader from "../layout/Loader";
+import { MetaData, Loader } from "../layout";
 import Sidebar from "./Sidebar";
 import { getAdminProducts } from "../../redux/actions/productActions";
 import { allOrders } from "../../redux/actions/orderActions";

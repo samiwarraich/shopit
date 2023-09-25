@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useAlert } from "react-alert";
-import MetaData from "../layout/MetaData";
+import { MetaData } from "../layout";
 import Sidebar from "./Sidebar";
 import { newProduct, clearErrors } from "../../redux/actions/productActions";
 import { NEW_PRODUCT_RESET } from "../../redux/constants/productConstant";

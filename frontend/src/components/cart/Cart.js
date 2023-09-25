@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
-import MetaData from "../layout/MetaData";
+import { MetaData } from "../layout";
 import {
   addItemToCart,
   removeItemFromCart,

@@ -2,16 +2,16 @@ import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useAlert } from "react-alert";
 import { Carousel } from "react-bootstrap";
+import { ListReview } from "../review";
+import { MetaData, Loader } from "../layout";
 import {
   getProductDetails,
   clearErrors,
   newReview,
 } from "../../redux/actions/productActions";
-import Loader from "../layout/Loader";
-import MetaData from "../layout/MetaData";
+
 import { addItemToCart } from "../../redux/actions/cartActions";
 import { NEW_REVIEW_RESET } from "../../redux/constants/productConstant";
-import ListReview from "../review/ListReview";
 
 const ProductDetails = ({ match }) => {
   const [quantity, setQuantity] = useState(1);

@@ -3,8 +3,7 @@ import { MDBDataTable } from "mdbreact";
 import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { useAlert } from "react-alert";
-import MetaData from "../layout/MetaData";
-import Loader from "../layout/Loader";
+import { MetaData, Loader } from "../layout";
 import { myOrders, clearErrors } from "../../redux/actions/orderActions";
 
 const ListOrders = () => {

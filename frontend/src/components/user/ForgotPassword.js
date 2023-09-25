@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useAlert } from "react-alert";
 import { useDispatch, useSelector } from "react-redux";
-import MetaData from "../layout/MetaData";
+import { MetaData } from "../layout";
 import { forgotPassword, clearErrors } from "../../redux/actions/userActions";
 
 const ForgotPassword = () => {
