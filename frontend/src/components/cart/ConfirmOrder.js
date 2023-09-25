@@ -50,23 +50,19 @@ const ConfirmOrder = ({ history }) => {
             <b>Address:</b>{" "}
             {`${shippingInfo.address}, ${shippingInfo.city}, ${shippingInfo.postalCode}, ${shippingInfo.country}`}
           </p>
-
           <hr />
           <h4 className="mt-4">Your Cart Items:</h4>
           <hr />
           {cartItems.map((item, i) => (
             <div key={i}>
-              {/* <hr /> */}
               <div className="cart-item my-1" key={item.product}>
                 <div className="row">
                   <div className="col-4 col-lg-2">
                     <img src={item.image} alt="Laptop" height="45" width="65" />
                   </div>
-
                   <div className="col-5 col-lg-6">
                     <Link to={`/product/${item.product}`}>{item.name}</Link>
                   </div>
-
                   <div className="col-4 col-lg-4 mt-4 mt-lg-0">
                     <p>
                       {item.quantity} x ${item.price} ={" "}
@@ -79,7 +75,6 @@ const ConfirmOrder = ({ history }) => {
             </div>
           ))}
         </div>
-
         <div className="col-12 col-lg-3 my-4">
           <div id="order_summary">
             <h4>Order Summary</h4>
@@ -95,13 +90,10 @@ const ConfirmOrder = ({ history }) => {
             <p>
               Tax: <span className="order-summary-values">${taxPrice}</span>
             </p>
-
             <hr />
-
             <p>
               Total: <span className="order-summary-values">${totalPrice}</span>
             </p>
-
             <hr />
             <button
               id="checkout_btn"

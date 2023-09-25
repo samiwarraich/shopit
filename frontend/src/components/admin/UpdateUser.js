@@ -67,7 +67,6 @@ const UpdateUser = ({ match, history }) => {
             <div className="col-10 col-lg-5">
               <form className="shadow-lg" onSubmit={submitHandler}>
                 <h1 className="mt-2 mb-5">Update User</h1>
-
                 <div className="form-group">
                   <label htmlFor="name_field">Name</label>
                   <input
@@ -79,7 +78,6 @@ const UpdateUser = ({ match, history }) => {
                     onChange={(e) => setName(e.target.value)}
                   />
                 </div>
-
                 <div className="form-group">
                   <label htmlFor="email_field">Email</label>
                   <input
@@ -91,10 +89,8 @@ const UpdateUser = ({ match, history }) => {
                     onChange={(e) => setEmail(e.target.value)}
                   />
                 </div>
-
                 <div className="form-group">
                   <label htmlFor="role_field">Role</label>
-
                   <select
                     id="role_field"
                     className="form-control"
@@ -106,7 +102,6 @@ const UpdateUser = ({ match, history }) => {
                     <option value="admin">admin</option>
                   </select>
                 </div>
-
                 <button
                   type="submit"
                   className="btn update-btn btn-block mt-4 mb-3"

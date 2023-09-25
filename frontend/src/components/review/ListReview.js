@@ -17,7 +17,6 @@ const ListReview = ({ reviews }) => {
               </div>
               <p className="review_user">by {review.name}</p>
               <p className="review_comment">{review.comment}</p>
-
               <hr />
             </div>
           ))}

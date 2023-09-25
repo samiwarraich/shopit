@@ -72,7 +72,6 @@ const ProcessOrder = ({ match }) => {
               <div className="row d-flex justify-content-around">
                 <div className="col-12 col-lg-7 order-details">
                   <h2 className="my-5">Order # {order?._id}</h2>
-
                   <h4 className="mb-4">Shipping Info</h4>
                   <p>
                     <b>Name:</b> {user?.name}
@@ -86,19 +85,15 @@ const ProcessOrder = ({ match }) => {
                   <p>
                     <b>Amount:</b> ${totalPrice}
                   </p>
-
                   <hr />
-
                   <h4 className="my-4">Payment</h4>
                   <p className={isPaid ? "greenColor" : "redColor"}>
                     <b>{isPaid ? "PAID" : "NOT PAID"}</b>
                   </p>
-
                   <h4 className="my-4">Stripe ID</h4>
                   <p>
                     <b>{paymentInfo?.id}</b>
                   </p>
-
                   <h4 className="my-4">Order Status:</h4>
                   <p
                     className={
@@ -110,9 +105,7 @@ const ProcessOrder = ({ match }) => {
                   >
                     <b>{orderStatus}</b>
                   </p>
-
                   <h4 className="my-4">Order Items:</h4>
-
                   <hr />
                   <div className="cart-item my-1">
                     {orderItems &&
@@ -127,17 +120,14 @@ const ProcessOrder = ({ match }) => {
                                 width="65"
                               />
                             </div>
-
                             <div className="col-5 col-lg-5">
                               <Link to={`/product/${item.product}`}>
                                 {item.name}
                               </Link>
                             </div>
-
                             <div className="col-4 col-lg-2 mt-4 mt-lg-0">
                               <p>${item.price}</p>
                             </div>
-
                             <div className="col-4 col-lg-3 mt-4 mt-lg-0">
                               <p>{item.quantity} Piece(s)</p>
                             </div>
@@ -148,10 +138,8 @@ const ProcessOrder = ({ match }) => {
                   </div>
                   {/* <hr /> */}
                 </div>
-
                 <div className="col-12 col-lg-3 mt-5">
                   <h4 className="my-4">Status</h4>
-
                   <div className="form-group">
                     <select
                       className="form-control"
@@ -164,7 +152,6 @@ const ProcessOrder = ({ match }) => {
                       <option value="Delivered">Delivered</option>
                     </select>
                   </div>
-
                   <button
                     className="btn btn-primary btn-block"
                     onClick={() => updateOrderHandler(order._id)}

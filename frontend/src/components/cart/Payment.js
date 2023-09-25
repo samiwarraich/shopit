@@ -128,7 +128,6 @@ const Payment = ({ history }) => {
                 options={options}
               />
             </div>
-
             <div className="form-group">
               <label htmlFor="card_exp_field">Card Expiry</label>
               <CardExpiryElement
@@ -138,7 +137,6 @@ const Payment = ({ history }) => {
                 options={options}
               />
             </div>
-
             <div className="form-group">
               <label htmlFor="card_cvc_field">Card CVC</label>
               <CardCvcElement
@@ -148,7 +146,6 @@ const Payment = ({ history }) => {
                 options={options}
               />
             </div>
-
             <button id="pay_btn" type="submit" className="btn btn-block py-3">
               Pay {` - ${orderInfo && orderInfo.totalPrice}`}
             </button>

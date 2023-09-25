@@ -43,7 +43,6 @@ const Shipping = ({ history }) => {
                 required
               />
             </div>
-
             <div className="form-group">
               <label htmlFor="city_field">City</label>
               <input
@@ -55,7 +54,6 @@ const Shipping = ({ history }) => {
                 required
               />
             </div>
-
             <div className="form-group">
               <label htmlFor="phone_field">Phone No</label>
               <input
@@ -67,7 +65,6 @@ const Shipping = ({ history }) => {
                 required
               />
             </div>
-
             <div className="form-group">
               <label htmlFor="postal_code_field">Postal Code</label>
               <input
@@ -79,7 +76,6 @@ const Shipping = ({ history }) => {
                 required
               />
             </div>
-
             <div className="form-group">
               <label htmlFor="country_field">Country</label>
               <select
@@ -96,7 +92,6 @@ const Shipping = ({ history }) => {
                 ))}
               </select>
             </div>
-
             <button
               id="shipping_btn"
               type="submit"

@@ -45,7 +45,6 @@ const Cart = ({ history }) => {
           <h2 className="mt-5">
             Your Cart: <b>{cartItems.length} items</b>
           </h2>
-
           <div className="row d-flex justify-content-between">
             <div className="col-12 col-lg-8">
               {cartItems.map((item, i) => (
@@ -61,15 +60,12 @@ const Cart = ({ history }) => {
                           width="115"
                         />
                       </div>
-
                       <div className="col-5 col-lg-3">
                         <Link to={`/product/${item.product}`}>{item.name}</Link>
                       </div>
-
                       <div className="col-4 col-lg-2 mt-4 mt-lg-0">
                         <p id="card_item_price">${item.price}</p>
                       </div>
-
                       <div className="col-4 col-lg-3 mt-4 mt-lg-0">
                         <div className="stockCounter d-inline">
                           <span
@@ -86,7 +82,6 @@ const Cart = ({ history }) => {
                             value={item.quantity}
                             readOnly
                           />
-
                           <span
                             className="btn btn-primary plus"
                             onClick={() =>
@@ -101,7 +96,6 @@ const Cart = ({ history }) => {
                           </span>
                         </div>
                       </div>
-
                       <div className="col-4 col-lg-1 mt-4 mt-lg-0">
                         <i
                           id="delete_cart_item"
@@ -116,7 +110,6 @@ const Cart = ({ history }) => {
               ))}
               <hr />
             </div>
-
             <div className="col-12 col-lg-3 my-4">
               <div id="order_summary">
                 <h4>Order Summary</h4>
@@ -143,7 +136,6 @@ const Cart = ({ history }) => {
                       .toFixed(2)}
                   </span>
                 </p>
-
                 <hr />
                 <button
                   id="checkout_btn"

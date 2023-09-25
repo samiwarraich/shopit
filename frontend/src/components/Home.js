@@ -71,9 +71,7 @@ const Home = ({ match }) => {
       ) : (
         <>
           <MetaData title={"Buy Best Products Online"} />
-
           <h1 id="products_heading">Latest Products</h1>
-
           <section id="products" className="container mt-5">
             <div className="row">
               {keyword ? (
@@ -97,10 +95,8 @@ const Home = ({ match }) => {
                         onChange={(price) => setPrice(price)}
                       />
                       <hr className="my-5" />
-
                       <div className="mt-5">
                         <h4 className="mb-3">Categories</h4>
-
                         <ul className="pl-0">
                           {categories?.map((category) => (
                             <li
@@ -117,10 +113,8 @@ const Home = ({ match }) => {
                         </ul>
                       </div>
                       <hr className="my-3" />
-
                       <div className="mt-5">
                         <h4 className="mb-3">Ratings</h4>
-
                         <ul className="pl-0">
                           {[5, 4, 3, 2, 1].map((start) => (
                             <li

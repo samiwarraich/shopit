@@ -118,7 +118,6 @@ const ProductReviews = ({ history }) => {
                       onChange={(e) => setProductId(e.target.value)}
                     />
                   </div>
-
                   <button
                     id="search_button"
                     type="submit"

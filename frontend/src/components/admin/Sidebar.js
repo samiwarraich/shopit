@@ -11,7 +11,6 @@ const Sidebar = () => {
               <i className="fa fa-tachometer"></i> Dashboard
             </Link>
           </li>
-
           <li>
             <a
               href="#productSubmenu"
@@ -27,7 +26,6 @@ const Sidebar = () => {
                   <i className="fa fa-clipboard"></i> All
                 </Link>
               </li>
-
               <li>
                 <Link to="/admin/product">
                   <i className="fa fa-plus"></i> Create
@@ -35,13 +33,11 @@ const Sidebar = () => {
               </li>
             </ul>
           </li>
-
           <li>
             <Link to="/admin/orders">
               <i className="fa fa-shopping-basket"></i> Orders
             </Link>
           </li>
-
           <li>
             <Link to="/admin/users">
               <i className="fa fa-users"></i> Users

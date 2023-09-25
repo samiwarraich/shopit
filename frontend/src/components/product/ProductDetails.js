@@ -133,13 +133,10 @@ const ProductDetails = ({ match }) => {
                   ))}
               </Carousel>
             </div>
-
             <div className="col-12 col-lg-5 mt-5">
               <h3>{product.name}</h3>
               <p id="product_id">Product # {product._id}</p>
-
               <hr />
-
               <div className="rating-outer">
                 <div
                   className="rating-inner"
@@ -147,22 +144,18 @@ const ProductDetails = ({ match }) => {
                 ></div>
               </div>
               <span id="no_of_reviews">({product.numOfReviews} Reviews)</span>
-
               <hr />
-
               <p id="product_price">${product.price}</p>
               <div className="stockCounter d-inline">
                 <span className="btn btn-danger minus" onClick={decreaseQty}>
                   -
                 </span>
-
                 <input
                   type="number"
                   className="form-control count d-inline"
                   value={quantity}
                   readOnly
                 />
-
                 <span className="btn btn-primary plus" onClick={increaseQty}>
                   +
                 </span>
@@ -176,9 +169,7 @@ const ProductDetails = ({ match }) => {
               >
                 Add to Cart
               </button>
-
               <hr />
-
               <p>
                 Status:{" "}
                 <span
@@ -188,9 +179,7 @@ const ProductDetails = ({ match }) => {
                   {product.stock > 0 ? "In Stock" : "Out of Stock"}
                 </span>
               </p>
-
               <hr />
-
               <h4 className="mt-2">Description:</h4>
               <p>{product.description}</p>
               <hr />
@@ -213,7 +202,6 @@ const ProductDetails = ({ match }) => {
                   Login to post your review
                 </div>
               )}
-
               <div className="row mt-2 mb-5">
                 <div className="rating w-50">
                   <div
@@ -257,7 +245,6 @@ const ProductDetails = ({ match }) => {
                               <i className="fa fa-star"></i>
                             </li>
                           </ul>
-
                           <textarea
                             name="review"
                             id="review"
@@ -265,7 +252,6 @@ const ProductDetails = ({ match }) => {
                             value={comment}
                             onChange={(e) => setComment(e.target.value)}
                           ></textarea>
-
                           <button
                             className="btn my-3 float-right review-btn px-4 text-white"
                             data-dismiss="modal"

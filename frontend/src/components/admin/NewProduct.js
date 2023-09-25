@@ -98,7 +98,6 @@ const NewProduct = ({ history }) => {
                 encType="multipart/form-data"
               >
                 <h1 className="mb-4">New Product</h1>
-
                 <div className="form-group">
                   <label htmlFor="name_field">Name</label>
                   <input
@@ -109,7 +108,6 @@ const NewProduct = ({ history }) => {
                     onChange={(e) => setName(e.target.value)}
                   />
                 </div>
-
                 <div className="form-group">
                   <label htmlFor="price_field">Price</label>
                   <input
@@ -120,7 +118,6 @@ const NewProduct = ({ history }) => {
                     onChange={(e) => setPrice(e.target.value)}
                   />
                 </div>
-
                 <div className="form-group">
                   <label htmlFor="description_field">Description</label>
                   <textarea
@@ -131,7 +128,6 @@ const NewProduct = ({ history }) => {
                     onChange={(e) => setDescription(e.target.value)}
                   ></textarea>
                 </div>
-
                 <div className="form-group">
                   <label htmlFor="category_field">Category</label>
                   <select
@@ -157,7 +153,6 @@ const NewProduct = ({ history }) => {
                     onChange={(e) => setStock(e.target.value)}
                   />
                 </div>
-
                 <div className="form-group">
                   <label htmlFor="seller_field">Seller Name</label>
                   <input
@@ -168,10 +163,8 @@ const NewProduct = ({ history }) => {
                     onChange={(e) => setSeller(e.target.value)}
                   />
                 </div>
-
                 <div className="form-group">
                   <label>Images</label>
-
                   <div className="custom-file">
                     <input
                       type="file"
@@ -196,7 +189,6 @@ const NewProduct = ({ history }) => {
                     />
                   ))}
                 </div>
-
                 <button
                   id="login_button"
                   type="submit"
