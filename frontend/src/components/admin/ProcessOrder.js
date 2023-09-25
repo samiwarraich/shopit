@@ -9,8 +9,8 @@ import {
   getOrderDetails,
   updateOrder,
   clearErrors,
-} from "../../actions/orderActions";
-import { UPDATE_ORDER_RESET } from "../../constants/orderConstants";
+} from "../../redux/actions/orderActions";
+import { UPDATE_ORDER_RESET } from "../../redux/constants/orderConstants";
 
 const ProcessOrder = ({ match }) => {
   const [status, setStatus] = useState("");

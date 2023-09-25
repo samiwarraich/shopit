@@ -7,8 +7,8 @@ import {
   updateProduct,
   getProductDetails,
   clearErrors,
-} from "../../actions/productActions";
-import { UPDATE_PRODUCT_RESET } from "../../constants/productConstant";
+} from "../../redux/actions/productActions";
+import { UPDATE_PRODUCT_RESET } from "../../redux/constants/productConstant";
 
 const UpdateProduct = ({ match, history }) => {
   const [name, setName] = useState("");

@@ -3,7 +3,7 @@ import { countries } from "countries-list";
 import CheckoutSteps from "./CheckoutSteps";
 import { useDispatch, useSelector } from "react-redux";
 import MetaData from "../layout/MetaData";
-import { saveShippingInfo } from "../../actions/cartActions";
+import { saveShippingInfo } from "../../redux/actions/cartActions";
 
 const Shipping = ({ history }) => {
   const countriesList = Object.values(countries);

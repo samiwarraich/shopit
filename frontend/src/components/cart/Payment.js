@@ -3,8 +3,8 @@ import axios from "axios";
 import CheckoutSteps from "./CheckoutSteps";
 import { useAlert } from "react-alert";
 import { useDispatch, useSelector } from "react-redux";
-import { createOrder, clearErrors } from "../../actions/orderActions";
-import { removeItemFromCart } from "../../actions/cartActions";
+import { createOrder, clearErrors } from "../../redux/actions/orderActions";
+import { removeItemFromCart } from "../../redux/actions/cartActions";
 import MetaData from "../layout/MetaData";
 import {
   useStripe,

@@ -7,8 +7,8 @@ import {
   updateUser,
   getUserDetails,
   clearErrors,
-} from "../../actions/userActions";
-import { UPDATE_USER_RESET } from "../../constants/userConstant";
+} from "../../redux/actions/userActions";
+import { UPDATE_USER_RESET } from "../../redux/constants/userConstant";
 
 const UpdateUser = ({ match, history }) => {
   const [name, setName] = useState("");

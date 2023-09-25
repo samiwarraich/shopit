@@ -10,8 +10,8 @@ import {
   getAdminProducts,
   clearErrors,
   deleteProduct,
-} from "../../actions/productActions";
-import { DELETE_PRODUCT_RESET } from "../../constants/productConstant";
+} from "../../redux/actions/productActions";
+import { DELETE_PRODUCT_RESET } from "../../redux/constants/productConstant";
 
 const ProductsList = ({ history }) => {
   const alert = useAlert();

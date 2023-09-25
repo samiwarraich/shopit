@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import Loader from "../layout/Loader";
 import MetaData from "../layout/MetaData";
-import { login, clearErrors } from "../../actions/userActions";
+import { login, clearErrors } from "../../redux/actions/userActions";
 
 const Login = ({ history, location }) => {
   const [email, setEmail] = useState("");

@@ -36,8 +36,8 @@ import UsersList from "./components/admin/UsersList";
 import ProductReviews from "./components/admin/ProductReviews";
 
 import ProtectedRoute from "./components/route/ProtectedRoute";
-import { loadUser } from "./actions/userActions";
-import store from "./store";
+import { loadUser } from "./redux/actions/userActions";
+import store from "./redux/store";
 import { Elements } from "@stripe/react-stripe-js";
 import { loadStripe } from "@stripe/stripe-js";
 import { useSelector } from "react-redux";

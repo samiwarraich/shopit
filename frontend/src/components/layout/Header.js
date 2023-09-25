@@ -3,7 +3,7 @@ import { Route, Link } from "react-router-dom";
 import Search from "./Search";
 import { useDispatch, useSelector } from "react-redux";
 import { useAlert } from "react-alert";
-import { logout } from "../../actions/userActions";
+import { logout } from "../../redux/actions/userActions";
 
 const Header = () => {
   const alert = useAlert();

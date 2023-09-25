@@ -3,8 +3,8 @@ import { useDispatch, useSelector } from "react-redux";
 import { useAlert } from "react-alert";
 import MetaData from "../layout/MetaData";
 import Sidebar from "./Sidebar";
-import { newProduct, clearErrors } from "../../actions/productActions";
-import { NEW_PRODUCT_RESET } from "../../constants/productConstant";
+import { newProduct, clearErrors } from "../../redux/actions/productActions";
+import { NEW_PRODUCT_RESET } from "../../redux/constants/productConstant";
 
 const NewProduct = ({ history }) => {
   const [name, setName] = useState("");

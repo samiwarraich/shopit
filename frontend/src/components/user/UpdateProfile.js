@@ -6,8 +6,8 @@ import {
   updateProfile,
   loadUser,
   clearErrors,
-} from "../../actions/userActions";
-import { UPDATE_PROFILE_RESET } from "../../constants/userConstant";
+} from "../../redux/actions/userActions";
+import { UPDATE_PROFILE_RESET } from "../../redux/constants/userConstant";
 
 const UpdateProfile = ({ history }) => {
   const [name, setName] = useState("");

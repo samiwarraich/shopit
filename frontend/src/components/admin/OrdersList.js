@@ -10,8 +10,8 @@ import {
   allOrders,
   clearErrors,
   deleteOrder,
-} from "../../actions/orderActions";
-import { DELETE_ORDER_RESET } from "../../constants/orderConstants";
+} from "../../redux/actions/orderActions";
+import { DELETE_ORDER_RESET } from "../../redux/constants/orderConstants";
 
 const OrdersList = ({ history }) => {
   const alert = useAlert();

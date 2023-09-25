@@ -8,8 +8,8 @@ import {
   getProductReviews,
   deleteReview,
   clearErrors,
-} from "../../actions/productActions";
-import { DELETE_REVIEW_RESET } from "../../constants/productConstant";
+} from "../../redux/actions/productActions";
+import { DELETE_REVIEW_RESET } from "../../redux/constants/productConstant";
 
 const ProductReviews = ({ history }) => {
   const [productId, setProductId] = useState("");

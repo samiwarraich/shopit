@@ -2,8 +2,8 @@ import React, { useState, useEffect } from "react";
 import { useAlert } from "react-alert";
 import { useDispatch, useSelector } from "react-redux";
 import MetaData from "../layout/MetaData";
-import { updatePassword, clearErrors } from "../../actions/userActions";
-import { UPDATE_PASSWORD_RESET } from "../../constants/userConstant";
+import { updatePassword, clearErrors } from "../../redux/actions/userActions";
+import { UPDATE_PASSWORD_RESET } from "../../redux/constants/userConstant";
 
 const UpdatePassword = ({ history }) => {
   const [oldPassword, setOldPassword] = useState("");

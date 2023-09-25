@@ -6,11 +6,11 @@ import {
   getProductDetails,
   clearErrors,
   newReview,
-} from "../../actions/productActions";
+} from "../../redux/actions/productActions";
 import Loader from "../layout/Loader";
 import MetaData from "../layout/MetaData";
-import { addItemToCart } from "../../actions/cartActions";
-import { NEW_REVIEW_RESET } from "../../constants/productConstant";
+import { addItemToCart } from "../../redux/actions/cartActions";
+import { NEW_REVIEW_RESET } from "../../redux/constants/productConstant";
 import ListReview from "../review/ListReview";
 
 const ProductDetails = ({ match }) => {

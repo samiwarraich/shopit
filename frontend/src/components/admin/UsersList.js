@@ -6,8 +6,12 @@ import { useAlert } from "react-alert";
 import MetaData from "../layout/MetaData";
 import Loader from "../layout/Loader";
 import Sidebar from "./Sidebar";
-import { allUsers, clearErrors, deleteUser } from "../../actions/userActions";
-import { DELETE_USER_RESET } from "../../constants/userConstant";
+import {
+  allUsers,
+  clearErrors,
+  deleteUser,
+} from "../../redux/actions/userActions";
+import { DELETE_USER_RESET } from "../../redux/constants/userConstant";
 
 const UsersList = ({ history }) => {
   const alert = useAlert();

@@ -2,7 +2,10 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import MetaData from "../layout/MetaData";
-import { addItemToCart, removeItemFromCart } from "../../actions/cartActions";
+import {
+  addItemToCart,
+  removeItemFromCart,
+} from "../../redux/actions/cartActions";
 
 const Cart = ({ history }) => {
   const dispatch = useDispatch();
