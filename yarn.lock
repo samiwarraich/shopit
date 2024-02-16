@@ -670,10 +670,10 @@ streamsearch@^1.1.0:
   resolved "https://registry.yarnpkg.com/streamsearch/-/streamsearch-1.1.0.tgz#404dd1e2247ca94af554e841a8ef0eaa238da764"
   integrity sha512-Mcc5wHehp9aXz1ax6bZUyY5afg9u2rv5cqQI3mRrYkGC8rW2hM02jWuwjtL++LS5qinSyhj2QfLyNsuc+VsExg==
 
-stripe@^14.4.0:
-  version "14.4.0"
-  resolved "https://registry.yarnpkg.com/stripe/-/stripe-14.4.0.tgz#f291fa1dc8d956d6f897bd8e9d01f40711c0f3b8"
-  integrity sha512-E3IxDo/Bvu0TtYrKfAf8lEYd0beTjFSN4xemuw2oEfUyxFpJyrzRZOw50HIEXFYYHWNDORicd8G8R4joCbN3/Q==
+stripe@^14.17.0:
+  version "14.17.0"
+  resolved "https://registry.yarnpkg.com/stripe/-/stripe-14.17.0.tgz#1b7ceaef076421bd560fdd765d56521dc6b34862"
+  integrity sha512-iwV5SKoXuRIQFne4twGwiiczOkVW73eE2CKn6ltUKCacDy4SGHBX6kj1/xCV2bzzzQjcVtsh5F1aAbJTmf3tLw==
   dependencies:
     "@types/node" ">=8.1.0"
     qs "^6.11.0"
