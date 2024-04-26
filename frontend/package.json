@@ -12,7 +12,7 @@
     "countries-list": "^3.0.6",
     "mdbreact": "^5.0.2",
     "rc-slider": "9.7.2",
-    "react": "^17.0.2",
+    "react": "^18.3.1",
     "react-alert": "^7.0.3",
     "react-alert-template-basic": "^1.0.2",
     "react-bootstrap": "^2.9.1",
