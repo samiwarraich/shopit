@@ -8,7 +8,7 @@
     "@testing-library/jest-dom": "^6.1.2",
     "@testing-library/react": "^12.1.5",
     "@testing-library/user-event": "^14.5.1",
-    "axios": "^1.6.2",
+    "axios": "^1.7.1",
     "countries-list": "^3.0.6",
     "mdbreact": "^5.0.2",
     "rc-slider": "9.7.2",
